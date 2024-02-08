@@ -1,5 +1,8 @@
 #!/bin/bash
-
+supervisorctl restart travelroad
+git add .
+git commit -m "deploy"
+git push
 ssh nuhazet@nuhazet.arkania.es "
   cd travelroad_django
   git pull
